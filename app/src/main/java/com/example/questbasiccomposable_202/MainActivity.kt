@@ -5,6 +5,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
@@ -49,6 +50,7 @@ fun BasicComposable(modifier: Modifier = Modifier) {
         modifier = Modifier
             .fillMaxSize()
             .padding(20.dp)
+            .background(Color.LightGray)
     ) {
         Text("Login",  fontSize = 50.sp,
             fontWeight = FontWeight.Bold)
