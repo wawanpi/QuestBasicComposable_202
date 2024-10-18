@@ -48,8 +48,8 @@ fun BasicComposable(modifier: Modifier = Modifier) {
         Text("Ini Adalah Halaman Login", fontSize = 20.sp, fontStyle = FontStyle.Italic)
         Spacer(modifier = Modifier.padding(10.dp))
         Image(
-            Painter =painterResource(id = R.drawable.logo),
-
+            Painter = painterResource(id = R.drawable.logo),
+            contentDescription = "UMY",
         )
 
     }
