@@ -14,6 +14,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
@@ -46,6 +47,10 @@ fun BasicComposable(modifier: Modifier = Modifier) {
         Spacer(modifier = Modifier.padding(5.dp))
         Text("Ini Adalah Halaman Login", fontSize = 20.sp, fontStyle = FontStyle.Italic)
         Spacer(modifier = Modifier.padding(10.dp))
+        Image(
+            Painter =painterResource(id = R.drawable.logo),
+
+        )
 
     }
 
