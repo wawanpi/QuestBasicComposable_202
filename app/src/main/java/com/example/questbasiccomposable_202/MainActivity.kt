@@ -57,10 +57,11 @@ fun BasicComposable(modifier: Modifier = Modifier) {
             contentDescription = "UMY",
             modifier = Modifier
                 .clip(CircleShape)
-                .size(200.dp)
+                   .size(200.dp)
 
         )
         Spacer(modifier = Modifier.padding(10.dp))
+        Text("Nama :", fontSize = 20.sp, fontStyle = FontStyle.Italic)
 
     }
 
