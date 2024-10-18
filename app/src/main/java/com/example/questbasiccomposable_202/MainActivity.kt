@@ -49,9 +49,9 @@ fun BasicComposable(modifier: Modifier = Modifier) {
         verticalArrangement = Arrangement.Top,
         modifier = Modifier
             .fillMaxSize()
-            .padding(10.dp)
             .background(Color.LightGray)
     ) {
+        Spacer(modifier = Modifier.padding(10.dp))
         Text("Login",  fontSize = 50.sp,
             fontWeight = FontWeight.Bold)
         Spacer(modifier = Modifier.padding(10.dp))
