@@ -18,6 +18,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontStyle
@@ -48,20 +49,29 @@ fun BasicComposable(modifier: Modifier = Modifier) {
             .fillMaxSize()
             .padding(20.dp)
     ) {
-        Text("Login",  fontSize = 50.sp, fontWeight = FontWeight.Bold)
+        Text("Login",  fontSize = 50.sp,
+            fontWeight = FontWeight.Bold)
         Spacer(modifier = Modifier.padding(10.dp))
-        Text("Ini Adalah Halaman Login", fontSize = 20.sp, fontStyle = FontStyle.Italic)
+        Text("Ini Adalah Halaman Login",
+            fontSize = 20.sp,
+            fontStyle = FontStyle.Italic)
         Spacer(modifier = Modifier.padding(10.dp))
         Image(
             painter = painterResource (id = R.drawable.logo),
             contentDescription = "UMY",
             modifier = Modifier
                 .clip(CircleShape)
-                   .size(200.dp)
+                .size(200.dp)
 
         )
         Spacer(modifier = Modifier.padding(10.dp))
-        Text("Nama :", fontSize = 20.sp, fontStyle = FontStyle.Italic)
+        Text("Nama :", fontSize = 20.sp,
+            fontStyle = FontStyle.Italic)
+        Spacer(modifier = Modifier.padding(5.dp))
+        Text("Muhammad Agus Kurniawan",
+            fontSize = 20.sp,
+            fontStyle = FontStyle.Italic,
+            color = Color.Blue)
 
     }
 
