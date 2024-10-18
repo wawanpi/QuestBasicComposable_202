@@ -20,20 +20,21 @@ class MainActivity : ComponentActivity() {
         setContent {
             QuestBasicComposable_202Theme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
+                    BasicComposable(modifier = Modifier.padding(innerPadding))
                 }
             }
         }
     }
 }
+@Composable
+fun BasicComposable(modifier: Modifier = Modifier) {
+
+}
 
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
     Text(
-        text = "Hello $name!",
+        text = "hello $name!",
         modifier = modifier
     )
 }
@@ -42,6 +43,6 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 @Composable
 fun GreetingPreview() {
     QuestBasicComposable_202Theme {
-        Greeting("Android")
+      //  Greeting("Android")
     }
 }
