@@ -49,7 +49,7 @@ fun BasicComposable(modifier: Modifier = Modifier) {
         verticalArrangement = Arrangement.Top,
         modifier = Modifier
             .fillMaxSize()
-            .padding(20.dp)
+            .padding(10.dp)
             .background(Color.LightGray)
     ) {
         Text("Login",  fontSize = 50.sp,
