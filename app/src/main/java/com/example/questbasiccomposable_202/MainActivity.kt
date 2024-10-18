@@ -72,6 +72,13 @@ fun BasicComposable(modifier: Modifier = Modifier) {
             fontSize = 20.sp,
             fontStyle = FontStyle.Italic,
             color = Color.Blue)
+        Spacer(modifier = Modifier.padding(5.dp))
+        Text("20220140202 ", fontSize = 20.sp,
+            fontStyle = FontStyle.Italic,
+            fontWeight = FontWeight.Bold)
+
+
+
 
     }
 
