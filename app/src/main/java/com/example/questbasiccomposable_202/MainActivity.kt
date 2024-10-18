@@ -40,7 +40,7 @@ fun BasicComposable(modifier: Modifier = Modifier) {
             .fillMaxSize()
             .padding(16.dp)
     ) {
-
+    Text("Login",  fontSize = 70.sp, fontWeight = FontWeight.Bold)
     }
 
 }
