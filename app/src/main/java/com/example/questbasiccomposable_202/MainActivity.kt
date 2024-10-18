@@ -45,6 +45,7 @@ fun BasicComposable(modifier: Modifier = Modifier) {
         Text("Login",  fontSize = 50.sp, fontWeight = FontWeight.Bold)
         Spacer(modifier = Modifier.padding(5.dp))
         Text("Ini Adalah Halaman Login", fontSize = 20.sp, fontStyle = FontStyle.Italic)
+        Spacer(modifier = Modifier.padding(10.dp))
 
     }
 
