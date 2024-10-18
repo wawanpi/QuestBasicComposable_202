@@ -19,6 +19,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.RectangleShape
 import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontStyle
@@ -76,10 +77,12 @@ fun BasicComposable(modifier: Modifier = Modifier) {
         Text("20220140202 ", fontSize = 20.sp,
             fontStyle = FontStyle.Italic,
             fontWeight = FontWeight.Bold)
-
-
-
-
+        Image(
+            painter = painterResource (id = R.drawable.img),
+            contentDescription = "Foto",
+            modifier = Modifier
+                .clip(RectangleShape)
+                .size(200.dp))
     }
 
 }
