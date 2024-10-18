@@ -62,7 +62,7 @@ fun BasicComposable(modifier: Modifier = Modifier) {
             contentDescription = "UMY",
             modifier = Modifier
                 .clip(CircleShape)
-                .size(200.dp)
+                .size(250.dp)
 
         )
         Spacer(modifier = Modifier.padding(10.dp))
@@ -83,7 +83,7 @@ fun BasicComposable(modifier: Modifier = Modifier) {
             contentDescription = "Foto",
             modifier = Modifier
                 .clip(RectangleShape)
-                .size(200.dp))
+                .size(300.dp))
     }
 
 }
