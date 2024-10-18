@@ -77,6 +77,7 @@ fun BasicComposable(modifier: Modifier = Modifier) {
         Text("20220140202 ", fontSize = 20.sp,
             fontStyle = FontStyle.Italic,
             fontWeight = FontWeight.Bold)
+        Spacer(modifier = Modifier.padding(5.dp))
         Image(
             painter = painterResource (id = R.drawable.img),
             contentDescription = "Foto",
